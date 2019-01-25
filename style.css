@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    border: 0;
+}
+a{
+    text-decoration: none;
+}
+kbd{
+    display: inline-block;
+    border: 1px solid red;
+    width: 4em;
+    height: 4em;
+    text-transform: uppercase;
+    position: relative;
+
+}
+kbd>button{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none;
+
+    transition: all 0.3s;
+    border-radius: 2px;
+}
+kbd:hover>button{
+    display: inline-block;
+   
+}
+kbd>button:hover{
+    background: rgb(238, 152, 24);
+    color:#fff;
+}
+#mainxxxx{
+    display: inline-block;
+
+    padding: 20px;
+    background: rgba(255,255,255,0.7);
+    border-radius: 10px;
+}
+
+body {
+    
+    background: #ccc url("./wall.jpg") repeat center center scroll;
+
+    background-size: cover;
+   
+
+}
+main {
+    margin: 0;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    min-width: 800px;
+   
+}
+
+#mainxxxx>div:nth-child(2){
+    margin-left: -30px;
+
+}
+#mainxxxx>div:nth-child(3){
+    margin-left: -112px;
+}
+
+.kbd{
+    margin: 0;
+    padding: 0;
+    border:0;
+    width: 65px;
+    height: 50px;
+
+    background: linear-gradient(to bottom, #fff 0%,#fff 70%,#f3f3f3 100%);
+    border-radius: 7px;
+
+    box-shadow: 0 5px 0 0 #767d81;
+    color: #767D81;
+    font-family: Helvetical;
+
+
+    vertical-align: top;
+    position: relative;
+    
+}
+.kbd_wrapper{
+    display: inline-block;
+    vertical-align: top;
+
+    width: 65px;
+    height: 55px;
+    border-radius: 7px;
+    margin: 0 5px;
+
+    box-shadow: 0 4px 3px 0 #3C3C3D,0 0 1px 0 #3C3C3D;
+  
+}
+#mainxxxx>div{
+    margin: 10px 0;
+}
+
+kbd img{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 7px;
+    bottom: 4px;
+}
+kbd .text{
+    position: absolute;
+    left: 7px;
+    top: 4px;
+}
+.kbd_wrapper:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+.search{
+    text-align: center;
+    position: fixed;
+    top: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 500px;
+}
+.search #searchInput{
+    border: 0;
+    background: transparent;
+    color: white;
+    border-bottom: 3px solid #ccc;
+    outline: none;   
+    width: 250px;
+}
+.search .button{
+    display: inline-block;
+    background: #fff;
+    border-radius: 5px;
+    border: 2px solid #767D81;
+    color: #767D81;
+    padding: 5px 10px;
+    cursor: pointer;
+    user-select:none;
+
+    transition: all .5s;
+}
+.search .button:hover{
+    background: rgb(206, 206, 206);
+}
+ 
+.tips{
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding:20px;
+    padding-top: 10px;
+    background: rgba(255,255,255,0.7);
+    border-radius: 10px;
+
+}
+.tips .title{
+    text-align: center;
+    font-weight: 600;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+@keyframes shake{
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
